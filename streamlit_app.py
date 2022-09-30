@@ -50,7 +50,7 @@ def get_fruit_load_list():
 		return my_cur.fetchall()
 
 
-if streamlit.button('Get Fruit Load List:')
+if streamlit.button('Get Fruit Load List:'):
 	streamlit.dataframe(get_fruit_load_list())
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?', 'Kiwi')
